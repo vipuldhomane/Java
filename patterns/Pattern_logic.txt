@@ -1,0 +1,7 @@
+: first start with breaking down the pattern in the matrix form.
+: find out the rows and columns.
+: for row inner loop logic will be used which means i will be used.
+: for row outer loop logic will be used which means j will be used.
+
+for number of rows write the outer loop then for number of columns 
+write the inner loop *most importantly dont use ln in print in inner loop*
