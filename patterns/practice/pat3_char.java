@@ -1,0 +1,28 @@
+package patterns.practice;
+
+import java.util.Scanner;
+
+// 4
+// A
+// BC
+// CDE
+// DEFG
+public class pat3_char {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        int i = 0;
+        while (i < n) {
+            int j = 0;
+            int p = i + 1;
+            while (j < i + 1) {
+                char ch = (char) (p + 64);
+                System.out.print(ch);
+                j++;
+                p++;
+            }
+            System.out.println();
+            i++;
+        }
+    }
+}
