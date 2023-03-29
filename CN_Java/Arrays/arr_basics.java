@@ -1,6 +1,5 @@
 package Arrays;
 
-import java.lang.reflect.Array;
 import java.util.Scanner;
 
 public class arr_basics {
@@ -9,7 +8,7 @@ public class arr_basics {
         int arr[] = new int[10];
         // adding elements to the array
         // arr[0] = 454;
-        // System.out.println(arr[0]);
+        System.out.println(arr[0]);
 
         // adding Multiple elements at once using loops
         Scanner sc = new Scanner(System.in);
