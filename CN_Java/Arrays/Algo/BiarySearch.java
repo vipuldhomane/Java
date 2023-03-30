@@ -3,8 +3,6 @@ package Arrays.Algo;
 
 import java.util.*;
 
-import javax.naming.InterruptedNamingException;
-
 public class BiarySearch {
     public static int BinarySearch(int arr[], int x) {
         Arrays.sort(arr);
