@@ -29,7 +29,7 @@ public class PrintAllChar {
     }
 
     public static void main(String[] args) {
-        String str = " ";
+        String str = "abc def";
         printChar(str);
         System.out.println(countWord(str));
     }

@@ -1,4 +1,4 @@
-package Patterns1;
+package JavaStrings;
 
 public class ReverseString {
     public static String reverseString(String str) {
