@@ -1,7 +1,5 @@
 package JavaStrings;
 
-import java.util.StringTokenizer;
-
 public class Permutation {
 
     public static boolean isPermutation(String str1, String str2) {

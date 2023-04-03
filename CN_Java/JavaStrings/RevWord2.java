@@ -1,6 +1,6 @@
 package JavaStrings;
 
-public class RevWord {
+public class RevWord2 {
     public class Solution {
         static String rev(String s) {
             // l = 0;
