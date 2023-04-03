@@ -9,7 +9,7 @@ public class Substrings {
                 count++;
             }
         }
-        System.out.println(count);
+        // System.out.println(count);
     }
 
     // Another Approach(Neglect)

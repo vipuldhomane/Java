@@ -27,33 +27,29 @@ public class RevWord {
         return ans;
     }
 
-    public static String reverseEachWord2(String input) {
-        String ans = "";
-        int currentWordStart = 0;
-        int i = 0;
-        for (; i < input.length(); i++) {
-            if (input.charAt(i) == ' ') {
-                int currentWordEnd = i - 1;
-                String revWord = "";
-                // Reversing the Word
-                for (int j = currentWordStart; j <= currentWordEnd; j++) {
-                    revWord = input.charAt(j) + revWord;
-                }
-                // Adding Reversed word to Original string
-                ans += revWord + " ";
-                currentWordStart = i + 1;
-            }
+    // Diff Approach
+    // Start
+    public static String rev(String s) {
+        // l = 0;
+        int n = s.length();
+        String st = "";
+        for (int i = 0; i < n; i++) {
+            st = s.charAt(i) + st;
         }
-        String revWord = "";
-        int currentWordEnd = i - 1;
-        for (int j = currentWordStart; j <= currentWordEnd; j++) {
-            revWord = input.charAt(j) + revWord;
-        }
-        // Adding Reversed word to Original string
-        ans += revWord + " ";
-        currentWordStart = i + 1;
-        return ans;
+        return st;
     }
+
+    public static String reverseEachWord2(String str) {
+        // Your code goes here
+        String a[] = str.split(" ");
+        String s = "";
+        for (int i = 0; i < a.length; i++) {
+            String an = rev(a[i]);
+            s += an + " ";
+        }
+        return s;
+    }
+    // End
 
     public static void main(String[] args) {
         String input = "abc def ghi";
