@@ -4,26 +4,28 @@ public class Sort012 {
 
     public static void sort012(int[] arr) {
 
-        int nextZero = 0;
-        int nextTwo = arr.length - 1;
+        int j = 0;
+        int k = arr.length - 1;
         int i = 0;
 
-        while (i <= nextTwo) {
+        while (i <= k) {
 
             if (arr[i] == 0) {
-
-                int temp = arr[nextZero];
-                arr[nextZero] = arr[i];
+                // swap
+                int temp = arr[j];
+                arr[j] = arr[i];
                 arr[i] = temp;
+                // increment
                 i++;
-                nextZero++;
+                j++;
 
             } else if (arr[i] == 2) {
-
-                int temp = arr[nextTwo];
-                arr[nextTwo] = arr[i];
+                // Swap
+                int temp = arr[k];
+                arr[k] = arr[i];
                 arr[i] = temp;
-                nextTwo--;
+                // decrement
+                k--;
 
             } else {
                 i++;
