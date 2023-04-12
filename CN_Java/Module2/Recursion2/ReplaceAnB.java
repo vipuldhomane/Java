@@ -25,11 +25,9 @@ public class ReplaceAnB {
         return input.charAt(0) + removeX(input.substring(1));
     }
 
-    }
-
     public static void main(String[] args) {
         String str = "axvxcxdxfxgx";
-        str = replaceChar(str, 'x', 'y');
+        str = removeX(str);
         System.out.println(str);
     }
 }
