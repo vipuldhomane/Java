@@ -35,7 +35,7 @@ public class MergeSort {
 
     }
 
-    public static void readarray(int arr[]) {
+    public static void readArray(int arr[]) {
         int n = arr.length;
         for (int i = 0; i < n; i++) {
             System.out.print(arr[i] + " ");
@@ -46,7 +46,7 @@ public class MergeSort {
         int arr1[] = { 1, 4, 8, 10, 13, 17 };
         int arr2[] = { 2, 3, 5, 8, 9, 11, 12 };
         int arr[] = mergeSort(arr1, arr2);
-        readarray(arr);
+        readArray(arr);
 
     }
 
